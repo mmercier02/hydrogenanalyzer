@@ -14,7 +14,7 @@ dBm = sheet1.iloc[:, 1] # This will read the seconf column of the Microsoft Exce
 
 # Knowns
 freq_emitt = 1420.405751768  # MHz (Rest frequency of Neutral Hydrogen)
-c =299792458 # m/s (The Measured Speed of Light)
+c =299792.458 # km/s (The Measured Speed of Light)
 H_o = 69.8 #km/sec/Mpc (Hubbles constant)
 
 # Find peak
@@ -32,14 +32,9 @@ if shift <= 0:
     print('The blue shift value from this data is Z = {}.'.format(shift))
 
 # Calculate the Recessional Velocity of Peak
-v_rec = shift*c *3.6# Shows the recessional velocity in kilometers per hour.
-rec_unit = 'km/hr'
+v_rec = shift*c6# Shows the recessional velocity in kilometers per second.
+rec_unit = 'km/sec'
 print('The recessional velocity from this data is: {} {}.'.format(v_rec, rec_unit))
-
-# Calculate the Distance to the Observed portion of the sky.
-d = (H_o / v_rec) * 3261563.7769
-d_unit = 'ly'
-print('The distance to the observed area is {}{}.'.format(d,d_unit))
 
 # Calculate the rotational speed of the galaxy. THIS IS A WORK IN PROGRESS!
 #d_con = d * 9.461e12 # converts d from ly to km 
