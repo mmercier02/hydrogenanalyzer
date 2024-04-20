@@ -41,12 +41,12 @@ d = (H_o / v_rec) * 3261563.7769
 d_unit = 'ly'
 print('The distance to the observed area is {}{}.'.format(d,d_unit))
 
-# Calculate the rotational speed of the galaxy.
-d_con = d * 9.461e12 # converts d from ly to km 
-r = 2.44087e17 + d_con # radius to galaxy based on observation (units in lightyears)
-rot_vel = v_rec/r
-rot_units = 'km/s'
-print('The rotational velocity of the Milky Way from this data is found to be {}{}'.format(rot_vel,rot_units))
+# Calculate the rotational speed of the galaxy. THIS IS A WORK IN PROGRESS!
+#d_con = d * 9.461e12 # converts d from ly to km 
+#r = 2.44087e17 + d_con # radius to galaxy based on observation (units in lightyears)
+#rot_vel = v_rec/r
+#rot_units = 'km/s'
+#print('The rotational velocity of the Milky Way from this data is found to be {}{}'.format(rot_vel,rot_units))
  
 
 # Plotting
